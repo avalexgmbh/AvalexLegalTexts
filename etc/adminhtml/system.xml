@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="avalexConfig" translate="label" sortOrder="999">
+            <label>Avalex</label>
+        </tab>
+        <section id="avalex_privacypolicy" translate="label" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="0">
+            <class>separator-top</class>
+            <label>avalex Rechstexte</label>
+            <tab>avalexConfig</tab>
+            <resource>Avalex_AvalexLegalTexts::config</resource> <!-- The ACL Resource -->
+            <group id="general" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Settings</label>
+                <field id="apiKey" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>API Key</label>
+                    <comment>You find your avalex API Key after login at avalex.de under the menu item `My Domains`. IMPORTANT FOR MULTI-STORES: For every website/domain you need a seperate license and a separate privacy policy. To enter the different avalex API keys please choose the related store view in the dropdown above.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

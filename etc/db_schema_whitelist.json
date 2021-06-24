@@ -1,0 +1,14 @@
+{
+    "avalex_log": {
+        "column": {
+            "version_id": true,
+            "type": true,
+            "html": true,
+            "store_code": true,
+            "changed": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
